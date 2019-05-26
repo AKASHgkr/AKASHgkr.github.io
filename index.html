@@ -5,10 +5,10 @@ task1
 </title>
 <body>
 <div class="tab">
-  <button class="tablinks" onclick="function('one')">Set your daily requirement</button>
-  <button class="tablinks" onclick="function('two')">See Nutrients chart</button>
-  <button class="tablinks" onclick="function('three')">Add your daily consumption</button>
-  <button class="tablinks" onclick="function('four')">Track your daily consumption</button>
+  <button class="tablinks" onclick="function(event,'one')">Set your daily requirement</button>
+  <button class="tablinks" onclick="function(event,'two')">See Nutrients chart</button>
+  <button class="tablinks" onclick="function(event,'three')">Add your daily consumption</button>
+  <button class="tablinks" onclick="function(event,'four')">Track your daily consumption</button>
  </div>
 
 <!-- Tab content -->
@@ -66,7 +66,7 @@ task1
 <div> 
 <script>
   var number;
-function (number) {
+function (event,number) {
   // Declare all variables
 var i;
   // Get all elements with class="tabcontent" and hide them
